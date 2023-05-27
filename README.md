@@ -12,6 +12,7 @@ The Crate API is a powerful API for retrieving information from PowerPoint games
 
 To get started with the Crate API, follow these steps:
 
+- Install all dependencies typing on terminal: `pip install -r requirements.txt`.
 - Go to `CrateAPI` directory using: `cd CrateAPI`.
 
 ### Manual Host
