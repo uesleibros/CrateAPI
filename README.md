@@ -18,12 +18,26 @@ To get started with the Crate API, follow these steps:
 
 You are running on your own machine, type this:
 
-```shell
+```makefile
 uvicorn base.config:app --host localhost --port 8000
 ```
 
 Else, for example you are using a client server like `Replit`, type this:
 
-```shell
+```makefile
 uvicorn base.config:app --host 0.0.0.0 --port 8000
+```
+
+### Automatic Host
+
+You are running on your own machine, type this:
+
+```makefile
+py server.py
+```
+
+Else, for example you are using a client server like `Replit`, type this:
+
+```makefile
+py server.py -client
 ```
