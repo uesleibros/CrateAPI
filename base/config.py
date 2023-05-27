@@ -32,6 +32,7 @@ def ImportRoutes() -> None:
 
 ImportRoutes()
 
-def Setup() -> None:
-	print("Crate API is Running.")
-	subprocess.call(["uvicorn", "base.config:app", "--host", "localhost", "--port", "8000"])
+def Setup(client: bool) -> None:
+	server: str = "0.0.0.0" if client else "localhost"
+	print(f"Crate API is Running on {'Client Server' if client else 'LocalHost'}.")
+	subprocess.call(["uvicorn", "base.config:app", "--host", server, "--port", "8000"])
