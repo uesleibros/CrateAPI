@@ -1,0 +1,5 @@
+exports.getProfile = function getProfile() {return elementorySupport.getJSON(generateWebMethodUrl("getProfile","backend/accounts/profiles.jsw"), arguments)}
+exports.fetchProfile = function fetchProfile() {return elementorySupport.getJSON(generateWebMethodUrl("fetchProfile","backend/accounts/profiles.jsw"), arguments)}
+exports.getProfiles = function getProfiles() {return elementorySupport.getJSON(generateWebMethodUrl("getProfiles","backend/accounts/profiles.jsw"), arguments)}
+exports.getProfilesList = function getProfilesList() {return elementorySupport.getJSON(generateWebMethodUrl("getProfilesList","backend/accounts/profiles.jsw"), arguments)}
+exports.filterProfInfo = function filterProfInfo() {return elementorySupport.getJSON(generateWebMethodUrl("filterProfInfo","backend/accounts/profiles.jsw"), arguments)}

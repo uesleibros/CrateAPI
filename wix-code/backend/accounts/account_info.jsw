@@ -1,0 +1,3 @@
+exports.getAccount = function getAccount() {return elementorySupport.getJSON(generateWebMethodUrl("getAccount","backend/accounts/account_info.jsw"), arguments)}
+exports.getAccountFollowing = function getAccountFollowing() {return elementorySupport.getJSON(generateWebMethodUrl("getAccountFollowing","backend/accounts/account_info.jsw"), arguments)}
+exports.test = function test() {return elementorySupport.getJSON(generateWebMethodUrl("test","backend/accounts/account_info.jsw"), arguments)}

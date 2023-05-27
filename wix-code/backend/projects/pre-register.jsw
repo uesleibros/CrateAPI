@@ -1,0 +1,1 @@
+exports.preRegisterProject = function preRegisterProject() {return elementorySupport.getJSON(generateWebMethodUrl("preRegisterProject","backend/projects/pre-reg.jsw"), arguments)}

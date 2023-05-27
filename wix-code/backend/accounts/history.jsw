@@ -1,0 +1,2 @@
+exports.getAccountHistory = function getAccountHistory() {return elementorySupport.getJSON(generateWebMethodUrl("getAccountHistory","backend/accounts/history.jsw"), arguments)}
+exports.insertAccountHistory = function insertAccountHistory() {return elementorySupport.getJSON(generateWebMethodUrl("insertAccountHistory","backend/accounts/history.jsw"), arguments)}

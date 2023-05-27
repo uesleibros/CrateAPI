@@ -1,0 +1,4 @@
+exports.test = function test() {return elementorySupport.getJSON(generateWebMethodUrl("test","backend/accounts/edit_account.jsw"), arguments)}
+exports.editAccount = function editAccount() {return elementorySupport.getJSON(generateWebMethodUrl("editAccount","backend/accounts/edit_account.jsw"), arguments)}
+exports.addConnection = function addConnection() {return elementorySupport.getJSON(generateWebMethodUrl("addConnection","backend/accounts/edit_account.jsw"), arguments)}
+exports.doAccountCheckIn = function doAccountCheckIn() {return elementorySupport.getJSON(generateWebMethodUrl("doAccountCheckIn","backend/accounts/edit_account.jsw"), arguments)}

@@ -1,0 +1,2 @@
+exports.getAccNotifications = function getAccNotifications() {return elementorySupport.getJSON(generateWebMethodUrl("getAccNotifications","backend/accounts/notifications.jsw"), arguments)}
+exports.readNotifications = function readNotifications() {return elementorySupport.getJSON(generateWebMethodUrl("readNotifications","backend/accounts/notifications.jsw"), arguments)}

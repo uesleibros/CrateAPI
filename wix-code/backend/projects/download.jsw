@@ -1,0 +1,2 @@
+exports.getProjectDownload = function getProjectDownload() {return elementorySupport.getJSON(generateWebMethodUrl("getProjectDownload","backend/projects/download.jsw"), arguments)}
+exports.downloadProject = function downloadProject() {return elementorySupport.getJSON(generateWebMethodUrl("downloadProject","backend/projects/download.jsw"), arguments)}

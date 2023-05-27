@@ -1,0 +1,12 @@
+exports.projGetChannel = function projGetChannel() {return elementorySupport.getJSON(generateWebMethodUrl("projGetChannel","backend/projects/channels.jsw"), arguments)}
+exports.projGetChannels = function projGetChannels() {return elementorySupport.getJSON(generateWebMethodUrl("projGetChannels","backend/projects/channels.jsw"), arguments)}
+exports.projActivateChannel = function projActivateChannel() {return elementorySupport.getJSON(generateWebMethodUrl("projActivateChannel","backend/projects/channels.jsw"), arguments)}
+exports.projDisableChannel = function projDisableChannel() {return elementorySupport.getJSON(generateWebMethodUrl("projDisableChannel","backend/projects/channels.jsw"), arguments)}
+exports.projUpdateChannel = function projUpdateChannel() {return elementorySupport.getJSON(generateWebMethodUrl("projUpdateChannel","backend/projects/channels.jsw"), arguments)}
+exports.projChanNewRelease = function projChanNewRelease() {return elementorySupport.getJSON(generateWebMethodUrl("projChanNewRelease","backend/projects/channels.jsw"), arguments)}
+exports.projChanUpdateRelease = function projChanUpdateRelease() {return elementorySupport.getJSON(generateWebMethodUrl("projChanUpdateRelease","backend/projects/channels.jsw"), arguments)}
+exports.joinProjChan = function joinProjChan() {return elementorySupport.getJSON(generateWebMethodUrl("joinProjChan","backend/projects/channels.jsw"), arguments)}
+exports.projCreateChannel = function projCreateChannel() {return elementorySupport.getJSON(generateWebMethodUrl("projCreateChannel","backend/projects/channels.jsw"), arguments)}
+exports.projGetChanUsers = function projGetChanUsers() {return elementorySupport.getJSON(generateWebMethodUrl("projGetChanUsers","backend/projects/channels.jsw"), arguments)}
+exports.projChanRemUser = function projChanRemUser() {return elementorySupport.getJSON(generateWebMethodUrl("projChanRemUser","backend/projects/channels.jsw"), arguments)}
+exports.projChanAcceptUser = function projChanAcceptUser() {return elementorySupport.getJSON(generateWebMethodUrl("projChanAcceptUser","backend/projects/channels.jsw"), arguments)}

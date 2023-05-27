@@ -1,7 +1,7 @@
 from typing import Dict, Tuple, Text, Union
 from fastapi import FastAPI
 from starlette.responses import Response
-import sys, subprocess
+import subprocess
 import os, importlib
 import json
 
@@ -26,7 +26,7 @@ def ImportRoutes() -> None:
 			continue
 
 		if files[0] == "router.py":
-			route: str = root.split("api/routes")[-1].replace("\\", ".")
+			route: str = root.split("api/routes")[-1].replace("\\", ".").replace("/", ".")
 			module: module = importlib.import_module(f"base.api.routes{route}.router")
 			app.include_router(module.router)
 
