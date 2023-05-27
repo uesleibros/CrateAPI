@@ -10,6 +10,12 @@ router: type = APIRouter()
 
 @router.get("/projetos/recentes/{section}", tags=["Projetos"], summary="Listar projetos por meio de seções com paginação.", response_class=PrettyJSONResponse)
 async def RecentsProjects(section: str, count: Optional[int] = Query(6)) -> dict:
+	"""
+	Listar projetos por meio de seções com paginação.
+
+	- **section**: Nome da seção.
+	- **count**: Números de projetos a ser pego.
+	"""
 	isValidSection: List[Union[bool, str]] = ValidSection(section, recents=True)
 	if not isValidSection[0]:
 		return JSONResponse(

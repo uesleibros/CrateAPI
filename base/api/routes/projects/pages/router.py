@@ -8,8 +8,15 @@ from base.api.wix.request import Crate
 
 router: type = APIRouter()
 
-@router.get("/projetos/{section}", tags=["Projetos"], summary="Listar projetos lançados recentemente por seções.", response_class=PrettyJSONResponse)
+@router.get("/projetos/secao/{section}", tags=["Projetos"], summary="Listar projetos lançados recentemente por seções.", response_class=PrettyJSONResponse)
 async def SectionsProjects(section: str, page: Optional[int] = Query(1), per_page: Optional[int] = Query(18)) -> Dict[str, Any]:
+	"""
+	Listar projetos lançados recentemente por seções.
+
+	- **section**: Nome da seção.
+	- **page**: Número da página.
+	- **per_page**: Número de projetos a ser pegos por página.
+	"""
 	isValidSection: List[Union[bool, str]] = ValidSection(section)
 	if not isValidSection[0]:
 		return JSONResponse(
