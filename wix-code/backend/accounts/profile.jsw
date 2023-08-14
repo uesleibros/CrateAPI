@@ -1,4 +1,0 @@
-exports.profIsFollowing = function profIsFollowing() {return elementorySupport.getJSON(generateWebMethodUrl("profIsFollowing","backend/accounts/profile.jsw"), arguments)}
-exports.profFollow = function profFollow() {return elementorySupport.getJSON(generateWebMethodUrl("profFollow","backend/accounts/profile.jsw"), arguments)}
-exports.profUnfollow = function profUnfollow() {return elementorySupport.getJSON(generateWebMethodUrl("profUnfollow","backend/accounts/profile.jsw"), arguments)}
-exports.sendCredits = function sendCredits() {return elementorySupport.getJSON(generateWebMethodUrl("sendCredits","backend/accounts/profile.jsw"), arguments)}

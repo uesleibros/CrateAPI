@@ -1,4 +1,0 @@
-exports.reportProject = function reportProject() {return elementorySupport.getJSON(generateWebMethodUrl("reportProject","backend/projects/project.jsw"), arguments)}
-exports.projWishlist = function projWishlist() {return elementorySupport.getJSON(generateWebMethodUrl("projWishlist","backend/projects/project.jsw"), arguments)}
-exports.test = function test() {return elementorySupport.getJSON(generateWebMethodUrl("test","backend/projects/project.jsw"), arguments)}
-exports.projSuspend = function projSuspend() {return elementorySupport.getJSON(generateWebMethodUrl("projSuspend","backend/projects/project.jsw"), arguments)}

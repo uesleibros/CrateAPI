@@ -1,3 +1,0 @@
-exports.projPublishRating = function projPublishRating() {return elementorySupport.getJSON(generateWebMethodUrl("projPublishRating","backend/projects/rating.jsw"), arguments)}
-exports.projRemoveRating = function projRemoveRating() {return elementorySupport.getJSON(generateWebMethodUrl("projRemoveRating","backend/projects/rating.jsw"), arguments)}
-exports.projGetRatings = function projGetRatings() {return elementorySupport.getJSON(generateWebMethodUrl("projGetRatings","backend/projects/rating.jsw"), arguments)}

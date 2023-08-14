@@ -1,1 +1,0 @@
-This is for i know the structure of CRATE WEBSITE
